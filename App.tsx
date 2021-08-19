@@ -33,7 +33,6 @@ export default function App() {
       method: 'GET'
     }).then((response) => response.json())
       .then((json) => {
-        console.log(json);
         setData(json);
         return json.miner;
       })
